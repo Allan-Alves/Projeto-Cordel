@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+@font-face {
+    font-family: 'Jokerman', 'Times New Roman', Times, serif;
+    src: url(../fonts/Jokerman.otf);
+}
+
+:root {
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-titulo: 'Jokerman', sans-serif;
+    --font-texto: "Playwrite IT Moderna", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    text-align: center;
+    color: black;
+    background: linear-gradient(100deg, rgba(223,145,65,1) 15%, rgba(210,116,49,1) 50%, rgba(162,71,58,1) 100%);
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;   
+    font-size: 10vw; 
+    /* Tamanho da fonte referente á 10% da largura da tela */
+    font-family: var(--fonte-titulo);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.356);
+}
+
+header > p {
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.116);
+}
+
+header a, footer a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    color: rgba(212, 204, 204, 0.925);
+    transition: 0.5s;
+}
+
+.container-image-books {
+    min-height: 10vh;
+    background-image: url(../images/1-books-unsplash-1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    padding-top: 10vh;     /* 10% da altura da tela. */
+    padding-bottom: 10vh;  /* 10% da altura da tela. */
+    padding-left: 30px;
+    line-height: 2.0em;
+    font-size: 3.5vw;
+    font-family: var(--font-texto);
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.normal {
+    color: black;
+    background-color: white;
+}
+
+.imagem {
+    color: white;
+    background-color: rgb(95, 93, 93);
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.500);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.imagem > p {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.500);
+    text-shadow: 2px 1px 2px black;
+    padding: 5px;
+}
+
+#imagem-1 {
+    background-image: url(../images/northeast-brazil.jpg);
+    background-position: right bottom;
+}
+
+#imagem-2 {
+    background-image: url(../images/3-old-pages.jpg);
+    background-position: center center;
+}
+
+#imagem-3 {
+    background-image: url(../images/4-sunset.jpg);
+    background-position: left top;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: black;
+    background: linear-gradient(100deg, rgba(223,145,65,1) 15%, rgba(210,116,49,1) 50%, rgba(162,71,58,1) 100%);
+}
